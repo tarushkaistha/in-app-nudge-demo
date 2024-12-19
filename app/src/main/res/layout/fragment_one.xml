@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".FragmentOne">
 
+    <TextView
+        android:id="@+id/frgA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to A fragment"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/f2_btn"
@@ -16,6 +25,6 @@
         android:textColor="#335F12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/frgA" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
